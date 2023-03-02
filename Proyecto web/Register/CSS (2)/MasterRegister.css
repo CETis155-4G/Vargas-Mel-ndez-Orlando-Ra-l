@@ -1,0 +1,130 @@
+* {/*Este código establece que todos los elementos de la página no tendrán margen 
+    ni padding y que el box-sizing será border-box.*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body{/*Este código establece que el fondo de la página será la imagen 'fondo.jpg' y se ajustará 
+    al tamaño de la ventana del navegador (100vw 100vh), y que la imagen de fondo será fija. 
+    También establece la familia de fuente en sans-serif y el color de fondo en darkslategray.*/
+    background-image: url('./fondito.png');
+    background-size: 100vw 100vh;
+    background-attachment: fixed;
+    font-family: sans-serif;
+    background-color: darkslategray;
+  }
+
+h1{/*Este código establece que todos los encabezados h1 estarán centrados en la página.*/
+  text-align: center;
+}
+
+
+  .form-register {/*Este código establece los estilos para el formulario de registro, incluyendo su 
+    tamaño, fondo, padding, margen, posicionamiento y sombra. También establece la familia de fuente 
+    en blanco y un borde redondeado de 4 píxeles.*/
+    width: 400px;
+    height: 100%;
+    background: black;
+    padding: 30px;
+    margin: auto;
+    top: 50%;
+    left: 50%;
+    margin-top: 25px;
+    border-radius: 4px;
+    color: white;
+    box-shadow: 7px 13px 37px #000;
+  }
+
+  .form-register h1 {/*Este código establece que el tamaño de fuente del encabezado h1 dentro del 
+    formulario de registro será de 22 píxeles y que habrá un margen inferior de 20 píxeles.*/
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+
+  .controls {/*Este código establece los estilos para los campos de entrada de texto en el 
+    formulario de registro, incluyendo su tamaño, fondo, padding, borde, posicionamiento, 
+    color de fuente y borde inferior de 1 píxel sólido en blanco.*/
+    width: 100%;
+    background: #000000;
+    padding: 10px;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border-bottom: 1px solid #fff;
+    font-family: 'calibri';
+    font-size: 18px;
+    color: white;
+  }
+
+  .form-register p {/*Este código establece los estilos para los párrafos dentro del formulario de 
+    registro, incluyendo su altura, alineación de texto, tamaño de fuente, línea y color de fuente.*/
+    height: 40px;
+    text-align: center;
+    font-size: 12px;
+    line-height: 40px;
+    color: darkgray;
+  }
+
+  .form-register a {/*Esto apunta a etiquetas de anclaje dentro de elementos con la clase 
+    "form-registrar". Establece el color en gris oscuro y elimina la decoración del texto subrayado.*/
+    color: darkgray;
+    text-decoration: none;
+  }
+
+  .form-register a:hover {/*Esto apunta a las etiquetas de anclaje dentro de los elementos con 
+    la clase "registro de formulario" cuando se desplazan sobre ellos. Establece el color en blanco 
+    y agrega una decoración de texto subrayado.*/
+    color: white;
+    text-decoration: underline;
+  }
+
+  .form-register .botons {/*Esto se dirige a elementos con la clase "botones" que están dentro de 
+    elementos con la clase "formulario-registro". Establece el ancho al 100 %, el color de fondo 
+    en rojo oscuro, elimina el borde y el contorno, centra el texto, establece la altura y el relleno, 
+    establece el color de fuente en blanco, agrega margen, establece el tamaño de fuente y agrega un 
+    radio de la frontera.*/
+    width: 100%;
+    background-color: rgb(218, 0, 0);
+    border: none;
+    outline: none;
+    text-align: center;
+    height: 40px;
+    padding: 12px;
+    color: white;
+    margin: 16px 0;
+    font-size: 18px;
+    border-radius: 20px;
+  }
+
+  .date{/*Esto apunta a elementos con la clase "fecha". Centra el texto, establece el ancho al 100 %, 
+    establece el color de fondo en negro, establece el relleno, elimina el contorno y el borde, agrega 
+    un borde blanco en la parte inferior, establece la familia de fuentes y el tamaño, y establece el 
+    color del texto en blanco.*/
+    text-align: center;
+    width: 100%;
+    background: #000000;
+    padding: 10px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #fff;
+    font-family: 'calibri';
+    font-size: 18px;
+    color: white;
+  }
+
+  .message{/*Esto apunta a elementos con la clase "mensaje". Establece el ancho al 100%, centra el 
+    texto y establece el color del texto en gris oscuro.*/
+    width: 100%;
+    text-align: center;
+    color: darkgray;
+  }
+  
+  .messages{/*Esto apunta a elementos con la clase "mensajes". Establece el ancho al 100%, centra el 
+    texto, establece el color del texto en gris oscuro y agrega relleno.*/
+    width: 100%;
+    text-align: center;
+    color: darkgray;
+    padding: 15px;
+  }

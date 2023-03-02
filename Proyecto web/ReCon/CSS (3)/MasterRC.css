@@ -1,0 +1,97 @@
+body{/*body: Se establecen algunos valores predeterminados para el cuerpo de la página. 
+    Se define un fondo de imagen (fondo.jpg) que se repite en el centro superior de la página, 
+    se establece el tamaño de fondo para cubrir toda la pantalla, se define la familia de 
+    fuentes predeterminada, se establece una altura de 100% de la pantalla y se establece el 
+    color de fondo como darkslategrey.*/
+    margin: 0;
+    padding: 0;
+    background: url(./fondito.png) no-repeat center top;
+    background-size: 100vw 100vh;
+    font-family: sans-serif;
+    height: 100vh;
+}
+
+.login-box{/*Se establecen los estilos para el cuadro de inicio de sesión. Se
+    establece un ancho de 320px, una altura de 450px, un fondo negro, un color de texto blanco,
+    se coloca en el centro de la página utilizando top y left al 50% y se desplaza a la mitad 
+    del ancho y la mitad de la altura utilizando transform, se establece box-sizing en border-box 
+    para incluir cualquier borde o relleno en el ancho y la altura total, y se define un relleno 
+    superior e inferior de 70px y un relleno izquierdo y derecho de 30px.*/
+    width: 320px;
+    height: 450px;
+    background-color: black;
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 50px 30px;
+}
+
+.login-box h1{/*Se establecen los estilos para el encabezado dentro del cuadro de inicio de sesión. 
+    Se elimina el margen y se establece el relleno en la parte inferior a 5px, se centra el texto y 
+    se define el tamaño de fuente en 22px.*/
+    margin: 0;
+    padding: 0 0 5px;
+    text-align: center;
+    font-size: 22px;
+
+}
+
+.login-box label{/*.Se establecen los estilos para las etiquetas de entrada dentro 
+    del cuadro de inicio de sesión. Se eliminan los márgenes y el relleno, se establece la fuente en 
+    negrita y se define como un bloque.*/
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    display: block;
+}
+
+.login-box input{/*.Se establecen los estilos para las entradas dentro del cuadro 
+    de inicio de sesión. Se establece un ancho del 99% y un margen inferior de 20px.*/
+    width: 99%;
+    margin-bottom: 20px;
+
+}
+
+.login-box input[type="email"], .login-box input[type="text"], .login-box input[type="tel"] {/*
+    Se establecen los estilos para los diferentes tipos de entrada (email, texto y teléfono) dentro del 
+    cuadro de inicio de sesión. Se eliminan los bordes y se establece una línea inferior de 1px sólida 
+    de color blanco, se establece un fondo transparente, se elimina cualquier contorno y se define 
+    una altura de 40px, un color de texto blanco y un tamaño de fuente de 16px.*/
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+  }
+
+  .login-box input[type="submit"]{/*Se establecen los estilos para 
+    el botón de envío dentro del cuadro de inicio de sesión. Se eliminan los bordes y el contorno, se 
+    establece una altura de 40px, un fondo rojo oscuro, un color de texto blanco, un tamaño de fuente 
+    de 18px y un radio de borde de 20px.*/
+    border: none;
+    outline: none;
+    height: 40px;
+    background-color: rgb(218, 0, 0);
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+  }
+
+  .login-box a{/*Se establecen los estilos para el enlace dentro del cuadro de inicio 
+    de sesión. Se elimina la decoración de subrayado, se define un tamaño de fuente de 12px y una altura 
+    de línea de 20px, y un color de texto gris oscuro.*/
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 20px;
+    color: darkgray;
+  }
+
+  .login-box a:hover{/*Se establecen los estilos para cuando se pasa el cursor 
+    sobre el enlace dentro del cuadro de inicio de sesión. Se define un color de texto blanco.*/
+    color: #fff;
+  }
