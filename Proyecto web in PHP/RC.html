@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rcuperar Cuenta | XD</title>
+    <link rel="stylesheet" href="./CSS (1)/MasterLogin.css">
+</head>
+<body>
+    <div class="RC-box">
+        <h1>Retrieve your password here</h1>
+        <form>
+            <!-- EMAIL -->
+            <label for="username">Your email</label>
+            <input type="email" placeholder="Enter Email">
+
+            <!-- USERNAME -->
+            <label for="username">Your username</label>
+            <input type="text" placeholder="Enter Usernamel">
+
+            <!-- NUMERO DE TELEFONO -->
+            <label for="username">Your nunber phone</label>
+            <input type="tel" placeholder="Enter nunber phone">
+
+            <!-- ENTER -->
+            <input type="submit" value="Enter">
+
+
+        </form>
+    </div>
+
+</body>
+</html>
