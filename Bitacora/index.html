@@ -5,8 +5,7 @@
     </title>
     <!-- href="https://fonts.googleapis.com/css2?family=Open+Sans"-->
     <!--Esto anterior es solo para quitar los cambios hechos con css-->
-    <link rel="stylesheet" href="./estilos/style.css">
-    <style>
+    <style>/*Esta etiqueta sirve solo para poner unos estilos de tipo CSS al resto de archivo*/
         /*html{
         font-size: 10px;/* px quiere decir pixeles: el tamaño de la fuente base es ahora de 10 pixeles de altura*/
         /*font-family: "Open Sans",sans-serif;
@@ -16,41 +15,35 @@
             border-radius: 10px;
         }
         .Mega-box{
-            width: 800px;
-            height: 100%;
-            text-align: center;
-            box-sizing: border-box;
-            top: 50%;
-            left: 50%;
-            position: absolute;
-            transform: translate(-50%, -50%);
+            width: 800px;/*define el tamaño orizontal*/
+            height: 100%;/*define el tamaño vertical*/
+            text-align: center;/*alinea el texto de manera central*/
+            box-sizing: border-box;/*define el borde la caja*/
+            top: 50%;/*hace un tipo de alineacion con la vista de la pantalla*/
+            left: 50%;/*hace una alineacion de pantalla hacia la izquierda*/
+            position: absolute;/*hace que la posicion de la caja no se defina junto con las condiciones de la pantalla*/
+            transform: translate(-50%, -50%);/*esta condicion sirve para poner la caja de texto en su posicion original*/
         }
         .estilo-de-titulo{
-            font-family: 'Courier New';/* --Elige el tipo de letra-- */
-            font-size: 70px;/* --Elige el tamaño-- */
+            font-family: 'Courier New';/*elige el tipo de letra*/
+            font-size: 70px;/*elige el tamaño*/
+            margin-bottom: 60px;/*deja un espacio en la parte de abajo*/
+            margin-top: 40px;/*deja un espacio en la parte superior*/
         }
-
         .fechas{
-            text-align: center;/* --Define la psicion del testo, en este caso lo elige hasta el final-- */
-            background-color: darkgrey;/* --Elige el color-- */
-            border-radius: 20px;
+            text-align: center;/*define la psicion del testo, en este caso lo elige hasta el final*/
+            background-color: darkgrey;/*elige el color*/
+            border-radius: 30px;/*le pone un borde de manera circular de 30 pixeles a cada lado*/
+            padding: 0.001cm;/*define un pespacio interior de la caja de texto*/
         }
-
-        .imagen-que-es-css{
-            width: 520px;
-            height: 176px;
-        }
-
         body{
-            font-family: "Open Sans", sans-serif;/* --Elige el tipo de letra-- */
-            text-align: center;
-            
+            font-family: "Open Sans", sans-serif;/*elige el tipo de letra*/
+            text-align: center;/*alinea el texto de manera central*/
         }
-
         p{
-            text-align: center;
-            font-size: 22px;
-            margin-bottom: 50px;
+            text-align: center;/*alinea el texto de manera central*/
+            font-size: 22px;/*define el tamaño de la fuente*/
+            margin-bottom: 50px;/*pone un espacio de 50 pixeles debajo*/
         }
     </style>
     <body><!--Etiqueta que define todo el cuerpo-->
@@ -70,8 +63,9 @@
             <p><!--Esto es un parrafo-->
                 En esta clase aprendi que es HTML y para que funciona.
             </p>
-            <A href="https://es.wikipedia.org/wiki/HTML" target="_blank"><p>HTML Wikipedia</p></A><!--Crea un enlace-->
-            <img src="./imagenes/HTML.jpg" alt="">
+            <a href="https://es.wikipedia.org/wiki/HTML" target="_blank">
+                <img src="https://www.edx.org/contentful/ii9ehdcj88bc/3qxhHKAlo0jlOGAfhkeDjj/7156064bdcb89a5c26b7436d10296a53/Aprende_lenguaje_html.jpg?w=509&fm=webp">
+            </a><!--Crea un enlace-->
             <div class="fechas">
                 <h2><!--Etiqueta del tipo de tamaño de texto-->
                     (Fecha: 02/02/23)
@@ -80,7 +74,7 @@
             <p><!--Esto es un parrafo-->
                 En esta clase nos tuvimos que meter a una cuanta github y aprendi como subir archivos a este.
             </p>
-            <img src="./imagenes/github_logo.jpg">
+            <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" style="width: 300px; height: 300px;">
             <div class="fechas">
                 <h2><!--Etiqueta del tipo de tamaño de texto-->
                     (Fecha: 08/02/23)
@@ -89,11 +83,9 @@
             <p><!--Esto es un parrafo-->
                 En esta clase aprendí como adornar un sitio web con puras etiquetas de HTML, pero en medio de la clase se fue el internet y por eso apenas estoy escribiendo esto a las 11 de la noche jaja.
             </p>
-            
             <A href="chrome-extension://dagdcbbdbfbgbgokdpcnkihpijnaoged/running-dinosaur-t-rex.html" target="_blank"><!--Etiqueta para poner un hipervinculo-->
-                <img src="./imagenes/dinosaurio.gif"><!--Estiqueta para poner una imagen-->
+                <img src="https://www.lavoz.com.ar/resizer/9DvCUG7gefuQi8BuK1Vk2X0oAsA=/1023x323/smart/storage.googleapis.com/gweb-uniblog-publish-prod/original_images/Dino_non-birthday_version.gif" style="width: 600px; height: 200px;"><!--Estiqueta para poner una imagen-->
             </A>
-            
             <div class="fechas">
                 <h2><!--Etiqueta del tipo de tamaño de texto-->
                     (Fecha: 09/02/23)
@@ -102,8 +94,9 @@
             <p><!--Esto es un parrafo-->
                 En esta clase el maestro nos enseño algunas partes escenciales del lenguaje de CSS para que asi supieramos como mejorar visualmente nustra pagina web, como parrafo, colores, tamaños de las letras, encuadres, etc.
             </p>
-            <A href="https://es.wikipedia.org/wiki/CSS" target="_blank"><p>Wikipedia CSS</p></A>
-            <img class="imagen-que-es-css" src="./imagenes/que-es-css.jpg"><!--Estiqueta para poner una imagen-->
+            <A href="https://es.wikipedia.org/wiki/CSS" target="_blank">
+                <img src="https://lenguajecss.com/css/introduccion/que-es-css/que-es-css.png" style="width: 600px; height: 230px;"><!--Estiqueta para poner una imagen-->
+            </A>
             <div class="fechas">
                 <h2><!--Etiqueta del tipo de tamaño de texto-->
                     (Fecha: 13/02/23)
@@ -112,16 +105,15 @@
             <p><!--Esto es un parrafo-->
                 En esta clase tuvimos que hacerle mejoras al codigo de html y hacerlo un poco más sencillo, para que al usuario se le haga más agradable a la vista. <br>
             </p>
-            <img src="./imagenes/ejemplo_css.jpg"><!--Estiqueta para poner una imagen-->
+            <img src="https://cursoswp.educacion.navarra.es/cursowp2018/wp-content/uploads/2018/03/codigo-css.jpg" style="width: 390px; height: 300px;"><!--Estiqueta para poner una imagen-->
             <div class="fechas">
                 <h2><!--Etiqueta del tipo de tamaño de texto-->
                     (Fecha: 15/02/23)
                 </h2>
             </div>
             <p><!--Esto es un parrafo-->
-                Este dia algunos compañeros precentaron su trabajo de HTML y CSS al profesor. Y posteriormente el maestro nos dio algunos consejos para mejorar de manera ya un poco más profecional nustra Bitacora y para que sea un poco más simple y sencilla para la vista de las demas personas
+                Este dia algunos compañeros precentaron su trabajo de HTML y CSS al profesor. Y posteriormente el maestro nos dio algunos consejos para mejorar de manera ya un poco más profecional nustra Bitacora y para que sea un poco más simple y sencilla para la vista de las demas personas.
             </p>
-
             <div class="fechas">
                 <h2><!--Etiqueta del tipo de tamaño de texto-->
                     (Fecha: 20/02/23)
@@ -130,6 +122,7 @@
             <p><!--Esto es un parrafo-->
                 En esta clase el maestro nos pidio que hagamos un sistema de Log in en html, un formulario de registro en caso de que el usuario no tenga una cuenta iniciada y despues hacer un filtro de todos los estados del pais.
             </p>
+            <img src="https://media.istockphoto.com/id/1135341047/es/vector/p%C3%A1gina-de-inicio-de-sesi%C3%B3n-en-la-pantalla-del-port%C3%A1til-cuaderno-y-formulario-de-inicio-de.jpg?s=612x612&w=0&k=20&c=nJHxr1M2kGWd7s4TNS8ff4JVTOiPnD7LUsW7kxy8WEk=" style="width: 400px; height: 400px;">
             <div class="fechas">
                 <h2><!--Etiqueta del tipo de tamaño de texto-->
                     (Fecha: 22/02/23)
@@ -177,8 +170,61 @@
                 </h2>
             </div>
             <p>
-
+                Este dia el profe Gerardonos dejo una mini actividad para ejecutar un archivo PHP de manera local y mas a parte nos explico un poco más sobre PHP.
             </p>
+            <div class="fechas">
+                <h2><!--Etiqueta del tipo de tamaño de texto-->
+                    (Fecha: 09/03/23)
+                </h2>
+            </div>
+            <p>
+                Este dia el profe Gerardo nos dejo modificar nuesta base de datos para asi implementarla a nuestro proyecto web.
+            </p>
+            <img src="https://www.sistekperu.com/public/wordpress/wp-content/uploads/2020/12/base-datos-diagrama.png" alt="">
+            <div class="fechas">
+                <h2><!--Etiqueta del tipo de tamaño de texto-->
+                    (Fecha: 13/03/23)
+                </h2>
+            </div>
+            <p>
+                En este dia el profe Gerardo le pidio a los equipos conectar la pantalla de registro en PHP a la base de datos ya hecha antes de las 8pm.
+            </p>
+            <div class="fechas">
+                <h2><!--Etiqueta del tipo de tamaño de texto-->
+                    (Fecha: 15/03/23)
+                </h2>
+            </div>
+            <p>
+                En este día los equipos de Front-end y Back-end tubieron que conectar el trabajo a la base de datos.
+            </p>
+            <div class="fechas">
+                <h2><!--Etiqueta del tipo de tamaño de texto-->
+                    (Fecha: 16/03/23)
+                </h2>
+            </div>
+            <p>
+                Este día el profe Gerardo nos dijo que los dias jueves el nos iba a revisar el trabajo y en base a esas revisiones el iba a dar dando retroalimentación.
+            </p>
+            <div class="fechas">
+                <h2><!--Etiqueta del tipo de tamaño de texto-->
+                    (Fecha: 22/03/23)
+                </h2>
+            </div>
+            <p>
+                En este día el equipo de Back-end le toco hacer la parte de menu para la cafeteria.
+            </p>
+            <div class="fechas">
+                <h2><!--Etiqueta del tipo de tamaño de texto-->
+                    (Fecha: 23/03/23)
+                </h2>
+            </div>
+            <p>
+                
+            </p>
+
+
+
+        </div>
     </body>
     </body>
 
